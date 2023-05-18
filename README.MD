@@ -1,6 +1,11 @@
 how use this ? try this
 <br />
+nametxtfile = "goat.txt"
+<br />
+savelineintxt = "messi"
+<br />
+removeline = "messi"
 <br />
 import textsaver <br />
-textsaver.savetotxt('messi','goat.txt')          <<<< this for add line <br />
-textsaver.removefromtxt('messi','goat.txt')      <<<< this for remove line
+textsaver.savetotxt(savelineintxt,nametxtfile)          <<<< this for add line <br />
+textsaver.removefromtxt(removeline,nametxtfile)      <<<< this for remove line
