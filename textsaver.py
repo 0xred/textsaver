@@ -1,10 +1,5 @@
 import os
-####################################################
-# how use this ?
-# from another file import this library 
-# test.savetotxt('messi','goat.txt') # add messi in goat.txt
-# test.removefromtxt('messi','goat.txt') # remove messi in goat.txt
-####################################################
+
 def savetotxt(savelineintxt,nametxtfile): # add line to text file
     with open(nametxtfile, "a") as afile:
         afile.write(savelineintxt + '\n')
