@@ -13,7 +13,9 @@ removeline = "messi"
 <br />
 findlineintxt = "cristiano"
 <br />
+xfind = "notfound"
+<br />
 textsaver.savetotxt(nametxtfile,savelineintxt)          <<<< this for add line <br />
 textsaver.removefromtxt(nametxtfile,removeline)      <<<< this for remove line <br />
-textsaver.check_name_exists(nametxtfile,findlineintxt,xfind) <<<<< this for find cristiano exist or not <br />
-print(xfind) print ===> notfound or found
+check = textsaver.check_name_exists(nametxtfile,findlineintxt,xfind) <<<<< this for find cristiano exist or not <br />
+print(check) print ===> notfound or found
