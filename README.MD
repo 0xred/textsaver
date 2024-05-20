@@ -1,5 +1,5 @@
 Example<br/>
-from main import SRC
+from example_library_text import SRC
 <br/>
 <br/>
 print(SRC.save("username")) || Add users in xusers.txt<br/>
