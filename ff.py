@@ -1,4 +1,3 @@
-# user_management.py
 import os
 
 list_users = 'xusers.txt'
@@ -21,20 +20,20 @@ class SRC:
     @staticmethod
     def save_to_txt(line):
         try:
-            if SRC.check_name_exists(line) == 'found':
-                return "found"
+            if SRC.check_name_exists(line):
+                return False
             else:
                 with open(list_users, "a") as f:
                     f.write(line + '\n')
-                return line
+                return True
         except:
-            return None
+            return False
 
     @staticmethod
     def remove_from_txt(line):
         try:
-            if SRC.check_name_exists(line) == 'notfound':
-                return "notfound"
+            if not SRC.check_name_exists(line):
+                return False
             else:
                 lines_to_keep = []
                 with open(list_users, "r") as f:
@@ -44,13 +43,13 @@ class SRC:
                             lines_to_keep.append(l)
                 with open(list_users, "w") as f:
                     f.writelines(lines_to_keep)
-                return line
+                return True
         except:
-            return None
+            return False
 
     @staticmethod
     def check_name_exists(line): 
         try:
-            return "found" if line in open(list_users, "r").read() else "notfound"
+            return line in open(list_users, "r").read()
         except:
-            return None
+            return False
