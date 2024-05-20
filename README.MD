@@ -1,6 +1,6 @@
 Example<br/>
-
-from ff import SRC
+from main import SRC
+<br/>
 <br/>
 print(SRC.save("username")) || Add users in xusers.txt<br/>
 True >>> if added to text xusers.txt successfully<br/>
