@@ -1,22 +1,7 @@
-NEW FILE FF.py <br/><br/>
-Save ilne in text || remove line from txt || find line in text
-<br />
-how use this?
-<br />
-import textsaver 
-<br />
-<br />
-nametxtfile = "goat.txt"
-<br />
-savelineintxt = "messi"
-<br />
-removeline = "messi"
-<br />
-findlineintxt = "cristiano"
-<br />
-xfind = "notfound"
-<br />
-textsaver.savetotxt(nametxtfile,savelineintxt)          <<<< this for add line <br />
-textsaver.removefromtxt(nametxtfile,removeline)      <<<< this for remove line <br />
-check = textsaver.check_name_exists(nametxtfile,findlineintxt,xfind) <<<<< this for find cristiano exist or not <br />
-print(check) print ===> notfound or found
+
+from ff import SRC
+<br/>
+Example<br/>
+print(SRC.save("username")) || Add users in xusers.txt<br/>
+print(SRC.remove("username"))  || Remove users From xusers.txt<br/>
+print(SRC.check("username"))  || Check users if in xusers.txt<br/>
